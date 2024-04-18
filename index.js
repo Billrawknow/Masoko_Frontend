@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cors());
 
 //Database Connection With MongoDB
-mongoose.connect("mongodb+srv://Rawknow:Rawknow3436@cluster0.freqnzd.mongodb.net/e-commerce");
+mongoose.connect(process.env.MONGODB_URI).then(()=>(console.log("DB Connected"))).catch((error)=>(console.log(error.message)));
 
 //API Creation
 
