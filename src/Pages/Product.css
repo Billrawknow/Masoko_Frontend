@@ -1,0 +1,26 @@
+/* main content css
+  .main-content {
+    padding-top: 98px;
+  }
+  @media(max-width:1280px){
+    .main-content{
+      padding-top: 84px;
+    }
+  }
+  @media(max-width:1024px){
+    .main-content{
+      padding-top: 84px;
+    }
+  }
+  @media (max-width:800px) {
+    .main-content{
+        padding-top: 80px;
+    }
+    @media (max-width:500px) {
+      .main-content{
+          padding-top: 76px;
+      }
+
+    }
+    
+    } */
