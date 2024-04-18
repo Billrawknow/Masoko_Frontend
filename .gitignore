@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-.env
 /.pnp
 .pnp.js
 
@@ -25,3 +24,5 @@ yarn-debug.log*
 yarn-error.log*
 # MongoDB files
 *.db
+#logs
+.env
