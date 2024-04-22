@@ -9,10 +9,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
-    "react-scripts": "^3.0.1",
-    "stream-http": "^3.2.0",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
-    
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,14 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@babel/plugin-transform-private-property-in-object": "^7.24.1",
-    "buffer": "^6.0.3",
-    "path-browserify": "^1.0.1",
-    "stream-browserify": "^3.0.0",
-    "url": "^0.11.3",
-    "util": "^0.12.5"
   }
 }
