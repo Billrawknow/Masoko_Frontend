@@ -1,55 +1,70 @@
-import React, { createContext, useState } from "react";
-import all_product from "../Components/Assests/all_product";
+import React, { createContext, useEffect, useState } from "react";
 
 export const ShopContext = createContext(null);
 
 const getDefaultCart = () => {
   let cart = {};
-  for (let index = 0; index < all_product.length; index++) {
+  for (let index = 0; index < 301; index++) {
     cart[index] = 0;
   }
   return cart;
 };
+
 const ShopContextProvider = (props) => {
+  const [all_product, setAll_Product] = useState([]);
   const [cartItems, setCartItems] = useState(getDefaultCart());
+
+  useEffect(() => {
+    fetch('http://localhost:4000/allproducts')
+      .then((response) => response.json())
+      .then((data) => setAll_Product(data))
+      .catch((error) => console.error('Error fetching products:', error));
+  }, []);
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
-    console.log(cartItems);
   };
 
   const removeFromCart = (itemId) => {
     setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
   };
+
   const getTotalCartAmount = () => {
-      let totalAmount =  0;
-      for (const item in cartItems)
-      {
-        if(cartItems[item]>0)
-        {
-            let itemInfo = all_product.find((product)=>product.id===Number(item))
-            totalAmount += itemInfo.new_price * cartItems[item];
-        }
-        
+    let totalAmount = 0;
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        let itemInfo = all_product.find((product) => product.id === Number(item));
+        totalAmount += itemInfo ? itemInfo.new_price * cartItems[item] : 0;
       }
-      return totalAmount;
-  }
+    }
+    return totalAmount;
+  };
+
   const getTotalCartItems = () => {
-    let totalItem =0;
-    for(const item in cartItems)
-    {
-        if(cartItems[item]>0)
-        {
-           totalItem+=cartItems[item]; 
-        }
+    let totalItem = 0;
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        totalItem += cartItems[item];
+      }
     }
     return totalItem;
-  }
-  const contextValue = {getTotalCartItems,getTotalCartAmount, all_product, cartItems, addToCart, removeFromCart };
-  return (
+  };
+
+  const contextValue = {
+    getTotalCartItems,
+    getTotalCartAmount,
+    all_product,
+    cartItems,
+    addToCart,
+    removeFromCart,
+  };
+
+  // Render the children only if all products are fetched
+  return all_product.length > 0 ? (
     <ShopContext.Provider value={contextValue}>
       {props.children}
     </ShopContext.Provider>
-  );
+  ) : null;
 };
+
 export default ShopContextProvider;
