@@ -4,6 +4,8 @@ import data_product from '../Assests/data'
 import Item from '../Item/Item'
 
 const Popular = () => {
+
+  const [popularProducts,setPopularProducts]
   return (
     <div className='popular'>
 
