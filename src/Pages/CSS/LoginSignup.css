@@ -10,7 +10,7 @@
     background: white;
     margin: auto;
     padding: 40px 60px;
-    border-radius: 35px;
+    border-radius: 36px;
 }
 .loginsignup-container h1 {
     margin: 20px 0px;
@@ -112,6 +112,6 @@
         }
         .loginsignup-container button {
             height: 50px;
-            font-size: 16px;
+            font-size: 18px;
         }
     }
