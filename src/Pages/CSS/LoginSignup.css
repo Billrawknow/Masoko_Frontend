@@ -10,7 +10,7 @@
     background: white;
     margin: auto;
     padding: 40px 60px;
-    border-radius: 36px;
+    border-radius: 38px;
 }
 .loginsignup-container h1 {
     margin: 20px 0px;
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 32px;
 
 }
 .loginsignup-fields input {
