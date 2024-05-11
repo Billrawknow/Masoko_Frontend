@@ -13,7 +13,7 @@
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 .nav-logo p {
   color: #171717;
