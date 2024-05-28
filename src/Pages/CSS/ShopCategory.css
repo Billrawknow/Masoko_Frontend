@@ -6,14 +6,14 @@
 }
 .shopcategory-indexSort {
     display: flex;
-    margin: 0px 170px;
+    margin: 0px 172px;
     justify-content: space-between;
     align-items: center;
     /* width: 0px 100px; */
 
 }
 .shopcategory-sort {
-    padding: 10px 20px;
+    padding: 10px 22px;
     /* margin-right: 80px; */
     border-radius: 40px;
     border: 1px solid #888;
