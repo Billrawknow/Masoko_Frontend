@@ -6,7 +6,7 @@
 }
 .shopcategory-indexSort {
     display: flex;
-    margin: 0px 170px;
+    margin: 0px 168px;
     justify-content: space-between;
     align-items: center;
     /* width: 0px 100px; */
@@ -15,7 +15,7 @@
 .shopcategory-sort {
     padding: 10px 20px;
     /* margin-right: 80px; */
-    border-radius: 38px;
+    border-radius: 36px;
     border: 1px solid #888;
 }
 
