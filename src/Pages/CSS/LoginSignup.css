@@ -9,11 +9,11 @@
     height: 600px;
     background: white;
     margin: auto;
-    padding: 40px 60px;
+    padding: 40px 58px;
     border-radius: 38px;
 }
 .loginsignup-container h1 {
-    margin: 20px 0px;
+    margin: 22px 0px;
 }
 .loginsignup-fields {
     display: flex;
