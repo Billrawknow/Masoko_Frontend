@@ -13,13 +13,13 @@
     border-radius: 38px;
 }
 .loginsignup-container h1 {
-    margin: 22px 0px;
+    margin: 20px 0px;
 }
 .loginsignup-fields {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 32px;
+    margin-top: 30px;
 
 }
 .loginsignup-fields input {
@@ -39,7 +39,7 @@
     background: #04701b;
     margin-top: 30px;
     border: none;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
     cursor: pointer;
     border-radius: 16px;
