@@ -29,7 +29,7 @@
     border: 1px solid #c9c9c9;
     outline: none;
     color: #5c5c5c;
-    font-size: 18px;
+    font-size: 20px;
     border-radius: 15px;
 }
 .loginsignup-container button{
@@ -39,7 +39,7 @@
     background: #04701b;
     margin-top: 30px;
     border: none;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     border-radius: 16px;
